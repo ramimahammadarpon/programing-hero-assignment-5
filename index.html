@@ -1,71 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Google Font Ends -->
 
-
     <!-- DaisyUI and Tailwind Link starts -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisiUI and Tailwin Link ends -->
 
     <!-- Tailwind Theme Script -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: "#3752FD",
-                textPrimary: "#00303C"
-              },
-              fontFamily: {
-                poppins: "'Poppins', sans-serif",
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3752FD",
+              textPrimary: "#00303C",
+            },
+            fontFamily: {
+              poppins: "'Poppins', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
 
     <title>Dev Board</title>
-</head>
-<body class="bg-[#d2b6e5] h-screen box-border">
+  </head>
+  <body class="bg-[#d2b6e5] min-h-screen">
     <main class="max-w-screen-xl mx-auto p-5">
+      <!-- Navigation Section starts -->
+      <nav class="flex justify-between bg-white p-3 rounded-xl">
+        <div class="flex items-center gap-2">
+          <img class="w-12" src="assets/logo.png" alt="" />
+          <h1 class="text-4xl text-textPrimary">
+            <span class="font-light">Dev</span
+            ><span class="font-bold">Board</span>
+          </h1>
+        </div>
+        <div class="flex justify-between gap-10">
+          <div class="flex items-center gap-2">
+            <img class="w-9" src="assets/checkbox.png" alt="" />
+            <h1 class="font-bold text-3xl text-[#1E1E1E]">23</h1>
+          </div>
+          <div>
+            <button><img src="assets/theme-btn.png" alt="" /></button>
+          </div>
+        </div>
+      </nav>
 
-        <!-- Navigation Section starts -->
-        <nav class="flex justify-between bg-white p-3 rounded-xl mt-5">
-            <div class="flex items-center gap-2">
-                <img class="w-12" src="assets/logo.png" alt="">
-                <h1 class="text-4xl text-textPrimary"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
-            </div>
-            <div class="flex justify-between gap-10">
-                <div class="flex items-center gap-2">
-                    <img class="w-9" src="assets/checkbox.png" alt="">
-                    <h1 class="font-bold text-3xl text-[#1E1E1E]">23</h1>
+      <!-- Container Section Starts -->
+      <section class="mt-5 flex gap-5">
+        <!-- Left Side -->
+        <div class="bg-white rounded-xl overflow-hidden w-9/12">
+          <!-- First Section Inside Left -->
+          <div
+            class="grid grid-cols-[24%_48%_24%] gap-5 py-5 border-b-2 border-slate-300 border-dashed"
+          >
+            <!-- First box -->
+            <div class="flex items-center justify-center p-7">
+              <div class="flex gap-8 text-textPrimary">
+                <div class="flex justify-center items-center">
+                  <img src="assets/checkbox.png" alt="" />
                 </div>
                 <div>
-                    <button><img src="assets/theme-btn.png" alt=""></button>
+                  <p class="font-medium">Task Assigned</p>
+                  <h1 class="text-3xl font-bold">05</h1>
                 </div>
+              </div>
             </div>
-        </nav>
-        <!-- Navigation Section ends -->
 
-        <!-- Container Section Starts -->
-        <section>
-            <!-- Left Side -->
-            <div></div>
+            <!-- Second Box -->
+            <div class="bg-gradient-to-r from-primary to-[#9BA8F8] rounded-xl flex items-center">
+              <div class="flex items-center gap-5 ml-7">
+                <div>
+                  <img src="assets/board.png" alt="" />
+                </div>
+                <p class="text-white font-medium text-2xl">
+                  Discover Somthing<br>New Today
+                </p>
+              </div>
+            </div>
 
-            <!-- Right Side -->
-            <div></div>
-        </section>
+            <!-- Third Box -->
+            <div class="flex justify-center items-center rounded-xl">
+              <div class="flex items-center gap-4 text-textPrimary">
+                <div><img src="assets/calender.png" alt="" /></div>
+                <p>
+                  <span class="font-light">Wed,<br /></span
+                  ><span class="font-bold">Jul 28 2025</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Seciton Inside left Div -->
+          <div class="mt-5 text-textPrimary grid grid-cols-3 gap-3 p-5">
+            <!-- box 1 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- box 2 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- box 3 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- box 4 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- box 5 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- box 6 -->
+            <div
+              class="p-5 shadow-xl border border-slate-200 rounded-lg bg-slate-100"
+            >
+              <div class="border-b border-slate-300 border-dashed">
+                <p class="ml-2 my-4 text-sm">ShopEase</p>
+                <h3 class="mb-4 text-2xl font-medium">
+                  Fix Mobile Button Issue
+                </h3>
+                <p class="ml-2 mb-4 text-stone-400">
+                  Debug using Chrome DevTools, check for overlapping
+                </p>
+              </div>
+              <div class="flex items-center justify-between mt-4">
+                <div>
+                  <p class="text-slate-500">Deadline</p>
+                  <p class="font-medium">21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="bg-white w-3/12 rounded-xl">
+          <div class="mt-5 pb-2 border-b border-slate-200 border-dashed">
+            <div class="flex justify-center items-center gap-3">
+                <div><img src="assets/activity.png" alt="" /></div>
+                <p class="font-medium text-xl text-textPrimary">Activity Log</p>
+              </div>
+              <div class="text-center mt-4">
+                <button class="px-4 py-2 bg-primary text-white rounded-lg">
+                  Clear History
+                </button>
+              </div>
+              
+          </div>
+
+          <!-- Dynamic Div -->
+          <div class="mt-10 px-6">
+            
+          </div>
 
 
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
