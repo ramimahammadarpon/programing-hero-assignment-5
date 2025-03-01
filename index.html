@@ -23,6 +23,7 @@
             extend: {
               colors: {
                 primary: "#3752FD",
+                textPrimary: "#00303C"
               },
               fontFamily: {
                 poppins: "'Poppins', sans-serif",
@@ -34,13 +35,37 @@
 
     <title>Dev Board</title>
 </head>
-<body class="bg-[#d2b6e5]">
-    <main>
-        <nav>
-            <div>
-                <img src="assets/logo.png" alt="">
+<body class="bg-[#d2b6e5] h-screen box-border">
+    <main class="max-w-screen-xl mx-auto p-5">
+
+        <!-- Navigation Section starts -->
+        <nav class="flex justify-between bg-white p-3 rounded-xl mt-5">
+            <div class="flex items-center gap-2">
+                <img class="w-12" src="assets/logo.png" alt="">
+                <h1 class="text-4xl text-textPrimary"><span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex justify-between gap-10">
+                <div class="flex items-center gap-2">
+                    <img class="w-9" src="assets/checkbox.png" alt="">
+                    <h1 class="font-bold text-3xl text-[#1E1E1E]">23</h1>
+                </div>
+                <div>
+                    <button><img src="assets/theme-btn.png" alt=""></button>
+                </div>
             </div>
         </nav>
+        <!-- Navigation Section ends -->
+
+        <!-- Container Section Starts -->
+        <section>
+            <!-- Left Side -->
+            <div></div>
+
+            <!-- Right Side -->
+            <div></div>
+        </section>
+
+
     </main>
 </body>
 </html>
