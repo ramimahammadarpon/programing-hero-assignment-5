@@ -1,7 +1,7 @@
 function setValueById(id, value) {
     document.getElementById(id).innerText = value;
 }
-function sumAndSub (event) {
+function sumAndSub (event, heading) {
     event.preventDefault();
     count++;
     sub--;
@@ -9,7 +9,7 @@ function sumAndSub (event) {
     setValueById("task-assigned",`${String(sub).padStart(2,'0')}`);
     console.log(count);
     console.log(sub);
-    updateActivityLog();
+    updateActivityLog(heading);
     event.target.style.backgroundColor = "#8b99f0"
     alert("Board Updated Sucessfully");
     if(count === 6) {
