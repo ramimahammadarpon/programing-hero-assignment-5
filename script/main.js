@@ -1,4 +1,3 @@
-console.log("main loaded")
 window.onload = function date() {
     const date = new Date();
     const week = date.getDay();
@@ -7,8 +6,7 @@ window.onload = function date() {
     const year = date.getFullYear();
 
     const weekDay = ["Sun", "Mon","Tue","Wed","Thu","Fri","Sat"];
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    console.log(weekDay[week], months[month], day, year);
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
     setValueById("week-day",weekDay[week]);
     setValueById("month-day-year",`${months[month]} ${day} ${year}`);
 
