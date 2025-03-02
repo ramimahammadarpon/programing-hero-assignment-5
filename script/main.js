@@ -16,3 +16,7 @@ window.onload = function date() {
 document.getElementById("clear-history").addEventListener("click",function(){
     document.getElementById("activity-log").innerHTML = ``;
 });
+
+document.getElementById("discover").addEventListener("click",function() {
+    window.location.href = "blogs.html";
+});

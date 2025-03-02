@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Board | Blogs</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <!-- Google Font Ends -->
+    
+        <!-- DaisyUI and Tailwind Link starts -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@5"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- DaisiUI and Tailwin Link ends -->
+    
+        <!-- Tailwind Theme Script -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: "#3752FD",
+                  textPrimary: "#00303C",
+                },
+                fontFamily: {
+                  poppins: "'Poppins', sans-serif",
+                },
+              },
+            },
+          };
+        </script>
+        <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+        <title>Dev Board</title>
+      </head>
+</head>
+<body class="font-poppins">
+    <main class="max-w-screen-xl h-screen mx-auto pt-5">
+
+        <!-- Navigation Section Starts -->
+        <nav class="flex justify-between bg-stone-100 py-3 px-6 rounded-xl drop-shadow-lg">
+            <div class="flex items-center gap-2">
+                <img class="w-12" src="assets/logo.png" alt="" />
+                <h1 class="text-4xl">
+                  <span class="font-light">Dev</span
+                  ><span class="font-bold">Board</span>
+                </h1>
+              </div>
+              <div>
+                <button id="back-to-desk" class="bg-primary py-2 px-4 rounded-lg text-white font-medium">Back to Desk</button>
+              </div>
+        </nav>
+
+        <!-- Blog Container Section Starts -->
+        <section>
+            <h1 class="text-2xl font-bold text-center mt-10">Blogs</h1>
+
+            <!-- QNA Section starts here -->
+             <div class="p-10 space-y-12">
+
+
+                <!-- First Question -->
+                <article class="space-y-7">
+                    <h1 class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <p class="text-lg text-stone-500 ml-5">There are 5 ways to select element in the DOM. The ways are given below:</p>
+                    <ol class="list-decimal text-stone-500 ml-14 space-y-4 text-lg">
+                        <li><span class="font-bold">Using document.getElementById("id"):</span> This allows user to select element using Id Attribute.</li>
+                        <li><span class="font-bold">Using document.getElementsByTagName("tag-name"):</span> This allows user to select element using tag name.</li>
+                        <li><span class="font-bold">Using document.getElementsByClassName("class-name"):</span> This allows user to select element using class name.</li>
+                        <li><span class="font-bold">Using document.querySelector("attribute selecor+attribute name"):</span>This allows user to select one element using selector and name. For Example, to select class color we need to write: document.querySelector(".color").</li>
+                        <li><span class="font-bold">Using document.querySelectorAll("attribute selecor+attribute name)</span>This allows user to select more than one element of same name using selector and name. For Example, to select elements with class colors we need to write: document.querySelectorAll(".colors").</li>
+                    </ol>
+                </article>
+
+                <!-- Second Question -->
+                <article class="space-y-7">
+                    <h1 class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <p class="text-lg text-stone-500 ml-5">There are a major difference in textContent, innerHTML and innerText is: </p>
+                    <ol class="list-decimal text-stone-500 ml-14 space-y-4 text-lg">
+                        <li><span class="font-bold">TextContent:</span> This returns all the contents in an element regardless of its visibility.</li>
+                        <li><span class="font-bold">innerText:</span> This returns only visible text content within an element.</li>
+                        <li><span class="font-bold">innerHTML</span> This returns elements inside tags.</li>
+                    </ol>
+                </article>
+
+                <!-- Third Question -->
+                <article class="space-y-7">
+                    <h1 class="font-bold text-xl">Question-3: What is event delegation in the DOM?</h1>
+                    <p class="text-lg text-stone-500 ml-5">Event Delegation is a way of selecting childs using their parent node to Avoid some issues.</p>
+                </article>
+
+                <!-- Fourth Question -->
+                <article class="space-y-7">
+                    <h1 class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</h1>
+                    <p class="text-lg text-stone-500 ml-5">If a we use two or three div inside one another and addEventListener to each div,after clicking the last div all the div's event triggers and shows output. It's called event bubbling.</p>
+                </article>
+
+                 <!-- Fifth Question -->
+                 <article class="space-y-7">
+                    <h1 class="font-bold text-xl">QueQuestion-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <ol class="list-decimal text-stone-500 ml-14 space-y-4 text-lg">
+                        <li><span class="font-bold">createElement:</span> we use document.createElement("element") to newly create an element.</li>
+                        <li><span class="font-bold">addElement:</span> We usually use appendChild(childName) to add elemnet.</li>
+                        <li><span class="font-bold">removeElement:</span>To remove element we can use removeChild(childName).</li>
+                    </ol>
+                </article>
+
+             </div>
+        </section>
+    </main>
+    <script src="script/blogs.js"></script>
 </body>
 </html>
