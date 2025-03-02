@@ -12,3 +12,7 @@ window.onload = function date() {
 
 
 }
+
+document.getElementById("clear-history").addEventListener("click",function(){
+    document.getElementById("activity-log").innerHTML = ``;
+});
