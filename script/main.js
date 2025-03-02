@@ -13,10 +13,12 @@ window.onload = function date() {
 
 }
 
-document.getElementById("clear-history").addEventListener("click",function(){
+document.getElementById("clear-history").addEventListener("click",function(event){
+    event.preventDefault();
     document.getElementById("activity-log").innerHTML = ``;
 });
 
-document.getElementById("discover").addEventListener("click",function() {
+document.getElementById("discover").addEventListener("click",function(event) {
     window.location.href = "blogs.html";
+
 });

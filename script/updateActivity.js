@@ -8,7 +8,6 @@ function updateActivityLog(heading) {
     newDiv.style.backgroundColor = "#d1daed";
     newDiv.style.padding = "10px";
     newDiv.style.fontSize = "15px";
-    newDiv.style.border = "1px solid #b7b9bd";
     newDiv.classList.add("shadow-xl");
     newDiv.classList.add("rounded-lg");
     newDiv.style.marginBottom = " 10px";
